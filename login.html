@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBreak — Личный кабинет</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>RazBorsh</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="login.html" class="active">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 style="margin-top: 40px;">Личный кабинет</h2>
+
+    <div class="auth-container">
+      <div class="auth-form">
+        <h3>Регистрация</h3>
+        <input type="text" id="regName" placeholder="Имя" required />
+        <input type="tel" id="regPhone" placeholder="Телефон" required />
+        <input type="email" id="regEmail" placeholder="Email" required />
+        <input type="text" id="regLogin" placeholder="Логин" required />
+        <input type="password" id="regPassword" placeholder="Пароль" required />
+        <button onclick="register()">Зарегистрироваться</button>
+      </div>
+
+      <div class="auth-form">
+        <h3>Вход</h3>
+        <input type="text" id="loginLogin" placeholder="Логин" required />
+        <input type="password" id="loginPassword" placeholder="Пароль" required />
+        <button onclick="login()">Войти</button>
+      </div>
+    </div>
+
+    <div id="authMessage" class="message"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 "ООО БНАЛ DEVELOPMENT". Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>

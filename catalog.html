@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBreak — Каталог</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>RazBorsh</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html" class="active">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="login.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 style="margin: 30px 0;">Каталог автозапчастей</h2>
+    <input type="text" id="searchInput" placeholder="Поиск по названию..." onkeyup="searchParts()" />
+
+    <div id="catalog" class="catalog-grid"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Телефон компании: +375 (29) 777-45-67</p>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modalName"></h3>
+      <p><strong>Артикул:</strong> <span id="modalArticle"></span></p>
+      <p><strong>Описание:</strong></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- КОНТАКТЫ -->
